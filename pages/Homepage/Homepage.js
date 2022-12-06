@@ -1,6 +1,6 @@
 import Navbar from '../navbar/navbar';
 import  Sidebar from '../sidebar/sidebar';
-import Feed from '../Feed/feed';
+import Feed from '../feed/feed';
 export default function Homepage({  }) {
     return (
       <div>
