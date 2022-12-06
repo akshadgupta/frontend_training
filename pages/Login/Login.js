@@ -19,7 +19,7 @@ export default function Login({  }) {
       withCredentials: true,
       credentials: 'same-origin',
       method : "POST",
-      url : "https://grazitti-app.herokuapp.com/register",
+      url : "http://localhost:3001/register",
       data: signupDetails,
     }
     axios(configuration)
@@ -42,7 +42,7 @@ export default function Login({  }) {
       withCredentials: true,
       credentials: 'same-origin',
       method : "POST",
-      url : "https://grazitti-app.herokuapp.com/login",
+      url : "http://localhost:3001/login",
       data: loginDetails,
     }
     axios(configuration)
@@ -52,6 +52,9 @@ export default function Login({  }) {
       if(token && email)
       {
         router.push("/Homepage/Homepage");
+      }
+      else{
+        console.log(result.response.status);
       }
     })
     .catch((e) => {console.log(e)});

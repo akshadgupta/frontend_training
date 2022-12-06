@@ -7,7 +7,11 @@ body {
 }
 
 * {
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -164,6 +168,10 @@ code {
   width: 100%;
 }
 .forgot {
+  color:white;
   margin-top: -20px;
   text-align: right;
+}
+.Feed_container{
+  margin-left: 270px;
 }
